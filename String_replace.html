@@ -1,0 +1,23 @@
+<html>
+<body>
+
+<h1>String Replace sample page</h1>
+
+<p id="txt">Today is Thursday!</p>
+
+<button type="button"
+onclick='replaceFunction()'>Replace!</button>
+
+<script>
+function replaceFunction()
+{
+	var input = document.getElementById("txt").innerHTML;
+	var output = input.replace('Thursday','Friday');
+	document.getElementById("txt").innerHTML = output;
+}
+
+
+</script>
+
+</body>
+</html>
