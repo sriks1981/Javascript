@@ -1,0 +1,31 @@
+<html>
+<body>
+
+<h1> Conversion from C to F and Vice Versa </h1>
+
+<p>Value in Celsius</p>
+<p><input id="ctxt" onkeyup="convert('C')"></p>
+
+<p>Value in Faherenite</p>
+<p><input id="ftxt" onkeyup="convert('F')"></p>
+
+<script>
+function convert(mode)
+{
+	var x;
+
+	if(mode == 'C')
+	{
+		x = document.getElementById("ctxt").value * 9/5 + 32;
+		document.getElementById("ftxt").value = Math.round(x);
+	}
+	else if (mode == 'F')
+	{
+		x = (document.getElementById("ftxt").value - 32) * 5/9;
+		document.getElementById("ctxt").value = Math.round(x);
+	}
+}
+</script>
+
+</body>
+</html>
